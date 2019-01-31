@@ -1,0 +1,62 @@
+<!--
+author: carlosCharlie
+https://github.com/carlosCharlie
+A Conway's Game of Life implementation.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Game of Life</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+   <div id="header">
+       <div>
+            <h1>GAMe oF LIFe</h1>
+            <h3><a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">What is the Conway's Game of Life?</a></h3>
+        </div>
+       
+       <div id="options">
+        <h3>options</h3>
+       
+        <div class="config">
+            <h4>size</h4>
+            <input type="text" name="" id="size">
+        </div>
+        <div class="config">
+            <h4>latency</h4>
+            <input type="text" name="" id="speed">
+        </div>
+        <div class="config">
+            <h4>min</h4>
+            <input type="text" name="" id="min">
+        </div>
+        <div class="config">
+            <h4>max</h4>
+            <input type="text" name="" id="max">
+        </div>
+
+        <input id="create" class="button" type="button" value="Generate">
+        <input id="start" class="button" type="button" value="Start" style="display:none">
+        <input id="stop" class="button" type="button" value="Stop" style="display:none">
+        </div>
+    </div>
+    <div id="container">
+        <div id = "#info" class = "textContainer">
+            <h2>How it works?</h2>
+            <ol>
+                <li>Set the options (the original game uses min:2 and max:3).</li>
+                <li>Click "Generate" to create the new game with the new rules.</li>
+                <li>Click some nearly circles (Example: try to draw the number "1")</li>
+                <li>Click "Start".</li>
+            </ol>
+        </div>
+        <div id="content">
+        </div>
+    </div>
+</body>
+</html>
